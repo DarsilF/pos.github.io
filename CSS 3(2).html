@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .block {
+            display: block;
+            width: 200px;
+            padding: 25px;
+            background-color: gray;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+
+            .block:hover {
+                background-color: slategray;
+                color: white;
+            }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .block:hover > .menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="block">
+            <span>1</span>
+            <div class="menu">
+                <div class="block">
+                    <span>22</span>
+                    <div class="menu">
+                        <div class="block">221</div>
+                        <div class="block">222</div>
+                        <div class="block">223</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <span>33</span>
+                    <div class="menu">
+                        <div class="block">331</div>
+                        <div class="block">332</div>
+                        <div class="block">333</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
